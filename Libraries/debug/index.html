@@ -36,7 +36,7 @@
     
     
       
-        <title>Debug - ProtoSmasher Docs</title>
+        <title>Debug - ProtoSmasher Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="ProtoSmasher Docs" class="md-header-nav__button md-logo">
+        <a href="../.." title="ProtoSmasher Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -107,7 +107,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              ProtoSmasher Docs
+              ProtoSmasher Documentation
             </span>
             <span class="md-header-nav__topic">
               
@@ -186,12 +186,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="ProtoSmasher Docs" class="md-nav__button md-logo">
+    <a href="../.." title="ProtoSmasher Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    ProtoSmasher Docs
+    ProtoSmasher Documentation
   </label>
   
     <div class="md-nav__source">
@@ -222,8 +222,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -236,18 +236,6 @@
   <li class="md-nav__item">
     <a href="../../base-environment/" title="Base Environment" class="md-nav__link">
       Base Environment
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../classes/" title="Classes" class="md-nav__link">
-      Classes
     </a>
   </li>
 
@@ -273,13 +261,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-4">
       Libraries
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         Libraries
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -368,15 +356,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getfenv" title="Getfenv" class="md-nav__link">
-    Getfenv
+  <a href="#get-function-environment" title="Get Function Environment" class="md-nav__link">
+    Get Function Environment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setfenv" title="Setfenv" class="md-nav__link">
-    Setfenv
+  <a href="#set-function-environment" title="Set Function Environment" class="md-nav__link">
+    Set Function Environment
   </a>
   
 </li>
@@ -410,8 +398,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getupvalue" title="Getupvalue" class="md-nav__link">
-    Getupvalue
+  <a href="#get-upvalue" title="Get Upvalue" class="md-nav__link">
+    Get Upvalue
   </a>
   
 </li>
@@ -564,15 +552,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getfenv" title="Getfenv" class="md-nav__link">
-    Getfenv
+  <a href="#get-function-environment" title="Get Function Environment" class="md-nav__link">
+    Get Function Environment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setfenv" title="Setfenv" class="md-nav__link">
-    Setfenv
+  <a href="#set-function-environment" title="Set Function Environment" class="md-nav__link">
+    Set Function Environment
   </a>
   
 </li>
@@ -606,8 +594,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getupvalue" title="Getupvalue" class="md-nav__link">
-    Getupvalue
+  <a href="#get-upvalue" title="Get Upvalue" class="md-nav__link">
+    Get Upvalue
   </a>
   
 </li>
@@ -692,24 +680,25 @@
 </pre></div>
 
 
-<p>Sets the metatable for the given object to the given table. (mt can be nil)</p>
-<h2 id="getfenv">Getfenv</h2>
+<p>Sets the metatable for the given object to the given table. (<code>mt</code> can be nil)</p>
+<h2 id="get-function-environment">Get Function Environment</h2>
 <div class="codehilite"><pre><span></span><span class="n">table</span> <span class="n">debug</span><span class="p">.</span><span class="n">getfenv</span><span class="p">(</span><span class="n">Variant</span> <span class="n">object</span><span class="p">)</span>
 </pre></div>
 
 
-<h2 id="setfenv">Setfenv</h2>
+<p>Returns the function environment of <code>object</code>.</p>
+<h2 id="set-function-environment">Set Function Environment</h2>
 <div class="codehilite"><pre><span></span><span class="n">Variant</span> <span class="n">debug</span><span class="p">.</span><span class="n">setfenv</span><span class="p">(</span><span class="n">Variant</span> <span class="n">object</span><span class="p">,</span> <span class="n">table</span> <span class="n">env</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Sets the environment of the given object, returns object.</p>
+<p>Sets the function environment of <code>object</code>, returns <code>object</code>.</p>
 <h2 id="get-metatable">Get Metatable</h2>
 <div class="codehilite"><pre><span></span><span class="n">table</span> <span class="nb">debug.getmetatable</span><span class="p">(</span><span class="n">Variant</span> <span class="n">object</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Returns the metatable of given object. (functions exactly like getrawmetatable)</p>
+<p>Returns the metatable of given object. (functions exactly like <code>getrawmetatable</code>)</p>
 <h2 id="get-local">Get Local</h2>
 <div class="codehilite"><pre><span></span><span class="n">variant</span> <span class="nb">debug.getlocal</span><span class="p">(</span><span class="n">int</span> <span class="n">stackIndex</span><span class="p">,</span> <span class="n">string</span> <span class="n">localName</span><span class="p">)</span>
 </pre></div>
@@ -727,8 +716,8 @@
 </pre></div>
 
 
-<p>Sets the value of a local from the selected stack based on the name. Returns boolean "true" on success.</p>
-<h2 id="getupvalue">Getupvalue</h2>
+<p>Sets the value of a local from the selected stack based on the name. Returns boolean <code>true</code> on success.</p>
+<h2 id="get-upvalue">Get Upvalue</h2>
 <div class="codehilite"><pre><span></span><span class="n">variant</span> <span class="nb">debug.getupvalue</span><span class="p">(</span><span class="n">Variant</span><span class="o">&lt;</span><span class="n">int</span><span class="p">,</span> <span class="kr">function</span><span class="err">&gt;</span> <span class="nf">container</span><span class="p">,</span> <span class="n">string</span> <span class="n">upvalName</span><span class="p">)</span>
 </pre></div>
 
@@ -751,31 +740,31 @@
 </pre></div>
 
 
-<p>Return's the constants of the given function. Function must be a lua function.</p>
+<p>Return's the constants of the given function. <code>f</code> must be a Lua function.</p>
 <h2 id="set-constant">Set Constant</h2>
 <div class="codehilite"><pre><span></span><span class="n">void</span> <span class="n">debug</span><span class="p">.</span><span class="n">setconstant</span><span class="p">(</span><span class="kr">function</span> <span class="nf">f</span><span class="p">,</span> <span class="n">int</span> <span class="n">index</span><span class="p">,</span> <span class="n">variant</span> <span class="n">val</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Set's the constant at the given index for the given function. Index's are 1-based. Function must be a lua function.</p>
+<p>Set's the constant at the given index for the given function. Index's are 1-based. <code>f</code> must be a Lua function.</p>
 <h2 id="upvalue-id">Upvalue ID</h2>
 <div class="codehilite"><pre><span></span><span class="n">userdata</span> <span class="nb">debug.upvalueid</span><span class="p">(</span><span class="kr">function</span> <span class="nf">f</span><span class="p">,</span> <span class="n">int</span> <span class="n">n</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Returns an unique identifier (as a light userdata) for the upvalue numbered n from the given function. These unique identifiers allow a program to check whether different closures share upvalues. Lua closures that share an upvalue (that is, that access a same external local variable) will return identical ids for those upvalue indices.</p>
+<p>Returns an unique identifier (as a light userdata) for the upvalue numbered <code>n</code> from the function <code>f</code>. These unique identifiers allow a program to check whether different closures share upvalues. Lua closures that share an upvalue (that is, that access a same external local variable) will return identical ids for those upvalue indices.</p>
 <h2 id="upvalue-join">Upvalue Join</h2>
 <div class="codehilite"><pre><span></span><span class="n">void</span> <span class="nb">debug.upvaluejoin</span><span class="p">(</span><span class="kr">function</span> <span class="nf">f1</span><span class="p">,</span> <span class="n">int</span> <span class="n">n1</span><span class="p">,</span> <span class="kr">function</span> <span class="nf">f2</span><span class="p">,</span> <span class="n">int</span> <span class="n">n2</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Make the n1-th upvalue of the Lua closure f1 refer to the n2-th upvalue of the Lua closure f2.</p>
+<p>Make the <code>n1</code>-th upvalue of the Lua closure <code>f1</code> refer to the <code>n2</code>-th upvalue of the Lua closure <code>f2</code>.</p>
 <h2 id="upvalue-name">Upvalue Name</h2>
 <div class="codehilite"><pre><span></span><span class="n">string</span> <span class="n">debug</span><span class="p">.</span><span class="n">upvaluename</span><span class="p">(</span><span class="kr">function</span> <span class="nf">f</span><span class="p">,</span> <span class="n">int</span> <span class="n">n</span><span class="p">)</span>
 </pre></div>
 
 
-<p>Returns the name for the upvalue numbered n from the given function. Will return an empty string on C closures.</p>
+<p>Returns the name for the upvalue numbered <code>n</code> from the given function. Will return an empty string on C closures.</p>
                 
                   
                 

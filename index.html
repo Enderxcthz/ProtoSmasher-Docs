@@ -36,7 +36,7 @@
     
     
       
-        <title>ProtoSmasher Docs</title>
+        <title>ProtoSmasher Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#getting-started" tabindex="1" class="md-skip">
+      <a href="#welcome" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -94,7 +94,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="ProtoSmasher Docs" class="md-header-nav__button md-logo">
+        <a href="." title="ProtoSmasher Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -107,11 +107,11 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              ProtoSmasher Docs
+              ProtoSmasher Documentation
             </span>
             <span class="md-header-nav__topic">
               
-                Getting Started
+                Welcome
               
             </span>
           
@@ -186,12 +186,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="." title="ProtoSmasher Docs" class="md-nav__button md-logo">
+    <a href="." title="ProtoSmasher Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    ProtoSmasher Docs
+    ProtoSmasher Documentation
   </label>
   
     <div class="md-nav__source">
@@ -231,11 +231,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
+        Welcome
       </label>
     
-    <a href="." title="Getting Started" class="md-nav__link md-nav__link--active">
-      Getting Started
+    <a href="." title="Welcome" class="md-nav__link md-nav__link--active">
+      Welcome
     </a>
     
       
@@ -298,18 +298,6 @@
 
 
   <li class="md-nav__item">
-    <a href="classes/" title="Classes" class="md-nav__link">
-      Classes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="constants/" title="Constants" class="md-nav__link">
       Constants
     </a>
@@ -323,13 +311,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-4">
       Libraries
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         Libraries
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -496,19 +484,15 @@
                   <a href="https://github.com/Infernal-Software/ProtoSmasher-Docs/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="getting-started">Getting Started</h1>
-<p>Welcome to the ProtoSmasher Docs!</p>
+                <h1 id="welcome">Welcome</h1>
+<p>Welcome to the ProtoSmasher Documentation!</p>
 <h2 id="contributing">Contributing</h2>
-<p>If you would like to contribute to the ProtoSmasher docs, simply open the github up in the top right and edit what you need to and hit us up with a pull request. Though we please ask you to follow our currently layout.</p>
+<p>If you would like to contribute to the ProtoSmasher documentation, simply open a pull request on GitHub. We only request that you preserve our current style and layout.</p>
 <h2 id="support">Support</h2>
-<p>For any support, please contact us at support@protosmasher.net or message one of the staff/support in our discord, which can be found on our main website.</p>
+<p>For any support, please contact us at <a href="mailto:support@protosmasher.net">support@protosmasher.net</a> or message one of our staff or support in our Discord, which can be found on our <a href="https://protosmasher.net">website</a>.</p>
 <h2 id="luau">LuaU</h2>
-<p>As some of you may, or may not have heard, ROBLOX has released a new feature to their custom edition of Lua 5.1 called LuaU. What is it? Well, it's their custom Lua VM, including new opcodes, and further optimization to make Lua faster, as the changes that they made to the already slow Lua VM, had made Lua even slower than it was. Thus with these changes, they are planning to further extend Lua capabilities, by adding type definitions to Lua, to optimize Lua.</p>
-<p>Though with these changes it makes it a little bit harder for us ato execute Lua, as the instructions that our Lua parsers generate aren't the same, so we would have to modify our Lua to match theirs, which could make it a bit unstable. Along with the debug information now being stripped from all Lua code that runs inside of LuaU, meaning that some of the functions that use this debug information, like getconstants, or even the decompiler may be harder to understand.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is a new additional to ROBLOX</p>
-</div>
+<p>As some may or may not have heard, Roblox has released a new Lua virtual machine known as LuaU. This is a complete rewrite of their old VM, with new opcodes, optimizations, and changes. With these changes, Roblox plans to extend their Lua implementation's capabilities through optimization and the addition of type definitions. This update also strips debug information from scripts' bytecode, meaning ProtoSmasher functions that use this information, such as <code>getconstants</code> and the decompiler may be harder to interpret.</p>
+<p>With these changes, script execution has been harder to achieve due to discrepancies in our Lua parser and Roblox's. Adapting to these changes may bring about some instabilities in ProtoSmasher, but stability should improve with each update that passes.</p>
                 
                   
                 

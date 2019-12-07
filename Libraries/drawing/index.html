@@ -36,7 +36,7 @@
     
     
       
-        <title>Drawing - ProtoSmasher Docs</title>
+        <title>Drawing - ProtoSmasher Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="ProtoSmasher Docs" class="md-header-nav__button md-logo">
+        <a href="../.." title="ProtoSmasher Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -107,7 +107,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              ProtoSmasher Docs
+              ProtoSmasher Documentation
             </span>
             <span class="md-header-nav__topic">
               
@@ -186,12 +186,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="ProtoSmasher Docs" class="md-nav__button md-logo">
+    <a href="../.." title="ProtoSmasher Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    ProtoSmasher Docs
+    ProtoSmasher Documentation
   </label>
   
     <div class="md-nav__source">
@@ -222,8 +222,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -236,18 +236,6 @@
   <li class="md-nav__item">
     <a href="../../base-environment/" title="Base Environment" class="md-nav__link">
       Base Environment
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../classes/" title="Classes" class="md-nav__link">
-      Classes
     </a>
   </li>
 
@@ -273,13 +261,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-4">
       Libraries
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         Libraries
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -372,6 +360,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#drawing-classes" title="Drawing Classes" class="md-nav__link">
+    Drawing Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base" title="Base" class="md-nav__link">
+    Base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line" title="Line" class="md-nav__link">
+    Line
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text" title="Text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#square" title="Square" class="md-nav__link">
+    Square
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle" title="Circle" class="md-nav__link">
+    Circle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triangle" title="Triangle" class="md-nav__link">
+    Triangle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" title="Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+      
       
       
       
@@ -451,6 +495,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#drawing-classes" title="Drawing Classes" class="md-nav__link">
+    Drawing Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base" title="Base" class="md-nav__link">
+    Base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line" title="Line" class="md-nav__link">
+    Line
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text" title="Text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#square" title="Square" class="md-nav__link">
+    Square
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle" title="Circle" class="md-nav__link">
+    Circle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triangle" title="Triangle" class="md-nav__link">
+    Triangle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" title="Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+      
       
       
       
@@ -477,6 +577,74 @@
 
 
 <p>Creates a new DrawObject based on the given class name and returns it.</p>
+<h2 id="drawing-classes">Drawing Classes</h2>
+<h2 id="base">Base</h2>
+<ul>
+<li>bool Visible</li>
+<li>int ZIndex</li>
+<li>void Remove()</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every class inherits functions and properties from this class.</p>
+</div>
+<h2 id="line">Line</h2>
+<ul>
+<li>Vector2 From</li>
+<li>Vector2 To</li>
+<li>Color3 Color</li>
+<li>float Thickness</li>
+<li>float Transparency</li>
+</ul>
+<h2 id="text">Text</h2>
+<ul>
+<li>string Text</li>
+<li>Vector2 Position</li>
+<li>float Size</li>
+<li>Color3 Color</li>
+<li>bool Center</li>
+<li>bool Outline</li>
+<li>float Transparency</li>
+<li>Vector2 TextBounds [readonly]</li>
+</ul>
+<h2 id="square">Square</h2>
+<ul>
+<li>Vector2 Position</li>
+<li>Vector2 Size</li>
+<li>Color3 Color</li>
+<li>float Thickness</li>
+<li>bool Filled</li>
+<li>float Transparency</li>
+</ul>
+<h2 id="circle">Circle</h2>
+<ul>
+<li>Vector2 Position</li>
+<li>float Radius</li>
+<li>Color3 Color</li>
+<li>float Thickness</li>
+<li>bool Filled</li>
+<li>float Transparency</li>
+<li>int NumSides</li>
+</ul>
+<h2 id="triangle">Triangle</h2>
+<ul>
+<li>Vector2 PointA</li>
+<li>Vector2 PointB</li>
+<li>Vector2 PointC</li>
+<li>Color3 Color</li>
+<li>float Thickness</li>
+<li>bool Filled</li>
+<li>float Transparency</li>
+</ul>
+<h2 id="image">Image</h2>
+<ul>
+<li>string Uri</li>
+<li>Vector2 Position</li>
+<li>Vector2 Size [readonly]</li>
+<li>bool Loaded</li>
+<li>float Transparency</li>
+<li>float ScaleFactor (this will update the Size property to reflect the scaled size)</li>
+</ul>
                 
                   
                 
