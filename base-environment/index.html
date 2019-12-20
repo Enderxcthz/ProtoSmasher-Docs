@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -56,7 +56,7 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
         <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1245,7 +1245,7 @@ The object could be locked, to check use <code>is_readonly</code> or <code>is_wr
 </pre></div>
 
 
-<p>Returns the decompiled source code of a script or function. (if you want bytecode put optionalArg as "dumponly")</p>
+<p>Returns the decompiled source code of a script or function. (if you want bytecode put optionalArg as "dumponly"). Currently broken as decompiling doesn't exist in the new Lua U VM.</p>
 <h2 id="set-clipboard">Set Clipboard</h2>
 <div class="codehilite"><pre><span></span><span class="n">void</span> <span class="n">setclipboard</span><span class="p">(</span><span class="n">string</span> <span class="n">strToCopy</span><span class="p">)</span>
 </pre></div>
@@ -1269,7 +1269,7 @@ The object could be locked, to check use <code>is_readonly</code> or <code>is_wr
 </pre></div>
 
 
-<p>Converts the given instance into Roblox's XML instance format and saves it to the saved under the given file name. When <code>enableScriptDecompiling</code> is true it will automatically decompile any ModuleScript or LocalScript it encounters.</p>
+<p>Converts the given instance into Roblox's XML instance format and saves it to the saved under the given file name. When <code>enableScriptDecompiling</code> is true it will automatically decompile any ModuleScript or LocalScript it encounters. Decompiling won't work with the new Lua U VM so don't set it to true.</p>
 <h2 id="disconnect-all">Disconnect all</h2>
 <div class="codehilite"><pre><span></span><span class="n">void</span> <span class="n">disconnect_all</span><span class="p">(</span><span class="n">RBXScriptSignal</span> <span class="n">signal</span><span class="p">)</span>
 </pre></div>
@@ -1281,7 +1281,7 @@ The object could be locked, to check use <code>is_readonly</code> or <code>is_wr
 </pre></div>
 
 
-<p>Unlocks a given ModuleScript so it can be required via ProtoSmasher (Used by require now)</p>
+<p>Unlocks a given ModuleScript so it can be required via ProtoSmasher (Used by require function now)</p>
 <h2 id="print-output">Print Output</h2>
 <div class="codehilite"><pre><span></span><span class="n">void</span> <span class="n">printoutput</span><span class="p">(</span><span class="n">string</span> <span class="n">text</span><span class="p">,</span> <span class="n">Color3</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">bool</span> <span class="n">newLine</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
 </pre></div>
@@ -1387,6 +1387,7 @@ The object could be locked, to check use <code>is_readonly</code> or <code>is_wr
                 
                   
                 
+                
               
               
                 
@@ -1453,7 +1454,7 @@ The object could be locked, to check use <code>is_readonly</code> or <code>is_wr
       
     </div>
     
-      <script src="../assets/javascripts/application.8e03edeb.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
