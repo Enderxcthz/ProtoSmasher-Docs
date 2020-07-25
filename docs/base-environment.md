@@ -91,6 +91,24 @@ boolean is_protosmasher_closure(function f)
 ```
 Returns a boolean based on whether or not the function was created by ProtoSmasher.
 
+## New C# Closure
+```lua
+function newcclosure(function f)
+```
+Creates a new C# function that replaces `f` (lua function) enclosed within the current thread.
+
+## Get Hidden Property
+```lua
+<Value> get_hidden_prop(Object<Instance> InstanceName, string property)
+```
+Returns a string/boolean/integer containing the instance's specified hidden property value, the data type it will return is dependant on the property you are trying to retrieve.
+
+## Set Hidden Property
+```lua
+boolean set_hidden_prop(Object<Instance> InstanceName, string property, <Data> NewValue)
+```
+Sets an instance's specified hidden property with `NewValue`. Make sure your current thread permission level is in accordancethe property you are trying to set, see `set_thread_context` for more info. Returns boolean dependant on success or failiure.
+
 ## Get Objects
 ```lua
 Array<Object> getobjects(Object<DataModel> dataModel, string ContentString)
